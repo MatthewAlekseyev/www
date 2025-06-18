@@ -20,5 +20,9 @@ img {
 }
 
 .wrapper {
-    background-image: url;
+    background-image: url('img/laptop.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
 }
