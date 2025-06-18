@@ -9,6 +9,7 @@ body {
     font-family: "Oswald", sans-serif;
     font-style: normal;
     font-weight: 500;
+    color: white;
 }
 
 a {
@@ -20,9 +21,72 @@ img {
 }
 
 .wrapper {
-    background-image: url('img/laptop.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(31, 31, 31, 1) 100%);
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header nav {
+    float: right;
+    width: 40%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav ul a {
+    color: white;
+}
+
+header nav ul li {
+    display: inline-block;
+    transition: all 500ms ease;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+header nav ul li {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hero {
+	padding-bottom: 100px;
+	position: relative;
+    padding-top: 300px;
+}
+
+.hero h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.hero p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
 }
