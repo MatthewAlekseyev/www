@@ -61,11 +61,26 @@ header nav ul li {
 header nav ul li:hover {
     transform: scale(1.1);
     cursor: pointer;
+    color: #999;
+    filter: grayscale(0%);
+}
+
+.header nav ul li::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    filter: blur(2px) brightness(1.8);
+    opacity: 0;
+    transition: 0.4s ease;
+    pointer-events: none;
 }
 
 header nav ul li {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
+    padding-left: 50px;
 }
 
 .hero {
@@ -81,6 +96,37 @@ header nav ul li {
     margin-bottom: 50px;
     font-size: 72px;
     font-weight: 500;
+}
+
+.hero h2, p {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(90deg, #999, #fff, #333);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s ease infinite;
+    text-shadow: 0 0 10px rgba(255,255,255,0.1);
+    transition: all 0.5s ease;
+}
+
+.hero h2:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #fff, 0 0 15px #aaa, 0 0 25px #fff;
+    letter-spacing: 2px;
+}
+
+.hero p:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px #fff, 0 0 15px #aaa, 0 0 25px #fff;
+    letter-spacing: 2px;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero p {
