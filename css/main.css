@@ -10,6 +10,7 @@ body {
     font-style: normal;
     font-weight: 500;
     color: white;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -136,6 +137,19 @@ header nav ul li {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 250px;
+}
+
+.strelka img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 300px;
+}
+
+.strelka img:hover {
+  opacity: 0.7;
 }
 
 .features {
