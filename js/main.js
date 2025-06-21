@@ -1,6 +1,4 @@
-const num = 1411
-if (num === 1488) {
-    console.log('Соси хуй')
-} else {
-    console.log('Мать шлюха')
-}
+document.querySelector('.scroll-down').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+});
